@@ -2,16 +2,16 @@
 
 Firmware embarqué pour nœuds capteurs Heltec WiFi LoRa 32 V3 (ESP32 + SX1262), conforme au cahier des charges matériel décrit dans `firmware.md`.
 
-## Ce qui est implémenté
+## Voici Ce qu'on a implémenté :
 
-- Pilotage MOSFET sur `GPIO 12` pour couper/rétablir l'alimentation du JSN-SR04T.
-- Acquisition distance via `GPIO 13` (Trig) et `GPIO 14` (Echo), avec filtrage médian.
-- Encodage payload binaire exact de `2 octets`:
+- Le Pilotage du MOSFET sur `GPIO 12` pour couper/rétablir l'alimentation du JSN-SR04T.
+- L'Acquisition distance via `GPIO 13` (Trig) et `GPIO 14` (Echo), avec filtrage médian.
+- L'Encodage payload binaire exact de `2 octets`:
   - Octet 0: taux de remplissage `0..100`
   - Octet 1: tension batterie en décivolts (exemple `41` => `4.1V`)
-- Transmission LoRaWAN OTAA (classe A, région EU868 par défaut).
-- Deep Sleep de `4 heures` entre deux cycles.
-- Persistance RTC minimale (compteurs + dernières valeurs utiles).
+- Le Transmission LoRaWAN OTAA (classe A, région EU868 par défaut).
+- Le Deep Sleep de `4 heures` entre deux cycles.
+- La Persistance RTC minimale (compteurs + dernières valeurs utiles).
 
 ## Démarrage rapide
 
