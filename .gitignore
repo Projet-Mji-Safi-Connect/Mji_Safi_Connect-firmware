@@ -52,3 +52,6 @@
 # OS
 Thumbs.db
 .DS_Store
+
+# Secrets LoRaWAN locaux (ne pas committer)
+include/lorawan_secrets.h
