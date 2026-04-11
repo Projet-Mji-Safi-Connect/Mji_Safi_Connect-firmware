@@ -1,4 +1,4 @@
-# Mji_Safi_Connect
+# Mji_Safi_Connect-formware
 
 Firmware embarqué pour nœuds capteurs Heltec WiFi LoRa 32 V3 (ESP32 + SX1262), conforme au cahier des charges matériel décrit dans `firmware.md`.
 
